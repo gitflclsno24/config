@@ -7,6 +7,7 @@
 
 cd $(dirname $0)
 
+git ls-files --others --exclude-from=.git/info/exclude
 git add -A .
 git commit -m "update $(date +'%F %T')"
 git push -f  origin master
