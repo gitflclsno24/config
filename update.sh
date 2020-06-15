@@ -9,8 +9,8 @@ cd $(dirname $0)
 
 git add .
 git commit -m "update $(date +'%F %T')"
-git push origin master
+git push -f  origin master
 
-/usr/local/mybin/bin/coscmd upload config.js config.js
-/usr/local/mybin/bin/coscmd upload config.json config.json
+coscmd upload config.js config.js
+coscmd upload config.json config.json
 
