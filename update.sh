@@ -7,7 +7,7 @@
 
 cd $(dirname $0)
 
-git add .
+git add -A .
 git commit -m "update $(date +'%F %T')"
 git push -f  origin master
 
